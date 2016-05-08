@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.shadowfacts.tutorial.block.ModBlocks;
 import net.shadowfacts.tutorial.item.ModItems;
 import net.shadowfacts.tutorial.proxy.CommonProxy;
 
@@ -24,6 +25,7 @@ public class TutorialMod {
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		ModItems.init();
+		ModBlocks.init();
 	}
 
 	@Mod.EventHandler
