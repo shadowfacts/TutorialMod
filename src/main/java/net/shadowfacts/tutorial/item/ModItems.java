@@ -11,8 +11,8 @@ public class ModItems {
 	public static ItemCornSeed cornSeed;
 
 	public static void init() {
-		ingotCopper = register(new ItemBase("ingotCopper").setCreativeTab(CreativeTabs.tabMaterials));
-		corn = register(new ItemBase("corn").setCreativeTab(CreativeTabs.tabFood));
+		ingotCopper = register(new ItemBase("ingotCopper").setCreativeTab(CreativeTabs.MATERIALS));
+		corn = register(new ItemBase("corn").setCreativeTab(CreativeTabs.FOOD));
 		cornSeed = register(new ItemCornSeed());
 	}
 

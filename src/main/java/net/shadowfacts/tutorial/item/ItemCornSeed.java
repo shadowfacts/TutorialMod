@@ -9,7 +9,7 @@ import net.shadowfacts.tutorial.block.ModBlocks;
 public class ItemCornSeed extends ItemSeeds implements ItemModelProvider {
 
 	public ItemCornSeed() {
-		super(ModBlocks.cropCorn, Blocks.farmland);
+		super(ModBlocks.cropCorn, Blocks.FARMLAND);
 		setUnlocalizedName("cornSeed");
 		setRegistryName("cornSeed");
 	}

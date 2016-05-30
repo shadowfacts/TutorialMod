@@ -12,7 +12,7 @@ public class ModBlocks {
 	public static BlockCropCorn cropCorn;
 
 	public static void init() {
-		oreCopper = register(new BlockOre("oreCopper").setCreativeTab(CreativeTabs.tabMaterials));
+		oreCopper = register(new BlockOre("oreCopper").setCreativeTab(CreativeTabs.MATERIALS));
 		cropCorn = register(new BlockCropCorn(), null);
 	}
 
