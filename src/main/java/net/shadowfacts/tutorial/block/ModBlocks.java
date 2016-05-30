@@ -4,21 +4,26 @@ import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.shadowfacts.tutorial.item.ItemModelProvider;
 
 public class ModBlocks {
 
 	public static BlockOre oreCopper;
+	public static BlockCropCorn cropCorn;
 
 	public static void init() {
 		oreCopper = register(new BlockOre("oreCopper").setCreativeTab(CreativeTabs.tabMaterials));
+		cropCorn = register(new BlockCropCorn(), null);
 	}
 
 	private static <T extends Block> T register(T block, ItemBlock itemBlock) {
 		GameRegistry.register(block);
-		GameRegistry.register(itemBlock);
+		if (itemBlock != null) {
+			GameRegistry.register(itemBlock);
 
-		if (block instanceof BlockBase) {
-			((BlockBase)block).registerItemModel(itemBlock);
+			if (block instanceof ItemModelProvider) {
+				((ItemModelProvider)block).registerItemModel(itemBlock);
+			}
 		}
 
 		return block;

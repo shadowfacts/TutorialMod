@@ -24,8 +24,8 @@ public class TutorialMod {
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
-		ModItems.init();
 		ModBlocks.init();
+		ModItems.init();
 	}
 
 	@Mod.EventHandler

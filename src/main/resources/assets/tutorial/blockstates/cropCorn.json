@@ -1,0 +1,50 @@
+{
+	"forge_marker": 1,
+	"defaults": {
+		"model": "cross"
+	},
+	"variants": {
+		"age": {
+			"0": {
+				"textures": {
+					"cross": "tutorial:blocks/corn/0"
+				}
+			},
+			"1": {
+				"textures": {
+					"cross": "tutorial:blocks/corn/1"
+				}
+			},
+			"2": {
+				"textures": {
+					"cross": "tutorial:blocks/corn/2"
+				}
+			},
+			"3": {
+				"textures": {
+					"cross": "tutorial:blocks/corn/3"
+				}
+			},
+			"4": {
+				"textures": {
+					"cross": "tutorial:blocks/corn/4"
+				}
+			},
+			"5": {
+				"textures": {
+					"cross": "tutorial:blocks/corn/5"
+				}
+			},
+			"6": {
+				"textures": {
+					"cross": "tutorial:blocks/corn/6"
+				}
+			},
+			"7": {
+				"textures": {
+					"cross": "tutorial:blocks/corn/7"
+				}
+			}
+		}
+	}
+}
