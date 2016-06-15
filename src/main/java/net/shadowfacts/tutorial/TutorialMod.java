@@ -6,6 +6,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.shadowfacts.tutorial.block.ModBlocks;
+import net.shadowfacts.tutorial.client.TutorialTab;
 import net.shadowfacts.tutorial.item.ModItems;
 import net.shadowfacts.tutorial.proxy.CommonProxy;
 
@@ -21,6 +22,8 @@ public class TutorialMod {
 
 	@SidedProxy(serverSide = "net.shadowfacts.tutorial.proxy.CommonProxy", clientSide = "net.shadowfacts.tutorial.proxy.ClientProxy")
 	public static CommonProxy proxy;
+
+	public static final TutorialTab creativeTab = new TutorialTab();
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {

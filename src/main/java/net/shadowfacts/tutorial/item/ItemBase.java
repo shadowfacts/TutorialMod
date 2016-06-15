@@ -12,6 +12,8 @@ public class ItemBase extends Item implements ItemModelProvider {
 		this.name = name;
 		setUnlocalizedName(name);
 		setRegistryName(name);
+
+		setCreativeTab(TutorialMod.creativeTab);
 	}
 
 	@Override

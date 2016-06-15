@@ -5,3 +5,6 @@ item.cornSeed.name=Corn Seed
 
 # Blocks
 tile.oreCopper.name=Copper Ore
+
+# Misc
+itemGroup.tutorial=Tutorial Mod

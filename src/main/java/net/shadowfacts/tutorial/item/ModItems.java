@@ -1,6 +1,5 @@
 package net.shadowfacts.tutorial.item;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -11,8 +10,8 @@ public class ModItems {
 	public static ItemCornSeed cornSeed;
 
 	public static void init() {
-		ingotCopper = register(new ItemBase("ingotCopper").setCreativeTab(CreativeTabs.MATERIALS));
-		corn = register(new ItemBase("corn").setCreativeTab(CreativeTabs.FOOD));
+		ingotCopper = register(new ItemBase("ingotCopper"));
+		corn = register(new ItemBase("corn"));
 		cornSeed = register(new ItemCornSeed());
 	}
 

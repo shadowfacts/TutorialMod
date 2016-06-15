@@ -18,6 +18,8 @@ public class BlockBase extends Block implements ItemModelProvider {
 
 		setUnlocalizedName(name);
 		setRegistryName(name);
+
+		setCreativeTab(TutorialMod.creativeTab);
 	}
 
 	@Override

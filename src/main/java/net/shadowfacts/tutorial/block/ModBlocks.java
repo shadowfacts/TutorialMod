@@ -1,7 +1,6 @@
 package net.shadowfacts.tutorial.block;
 
 import net.minecraft.block.Block;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.shadowfacts.tutorial.item.ItemModelProvider;
@@ -12,7 +11,7 @@ public class ModBlocks {
 	public static BlockCropCorn cropCorn;
 
 	public static void init() {
-		oreCopper = register(new BlockOre("oreCopper").setCreativeTab(CreativeTabs.MATERIALS));
+		oreCopper = register(new BlockOre("oreCopper"));
 		cropCorn = register(new BlockCropCorn(), null);
 	}
 

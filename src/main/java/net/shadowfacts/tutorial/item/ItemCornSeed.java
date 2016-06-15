@@ -12,6 +12,8 @@ public class ItemCornSeed extends ItemSeeds implements ItemModelProvider {
 		super(ModBlocks.cropCorn, Blocks.FARMLAND);
 		setUnlocalizedName("cornSeed");
 		setRegistryName("cornSeed");
+
+		setCreativeTab(TutorialMod.creativeTab);
 	}
 
 	@Override
