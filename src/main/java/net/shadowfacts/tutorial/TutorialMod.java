@@ -10,7 +10,7 @@ import net.shadowfacts.tutorial.client.TutorialTab;
 import net.shadowfacts.tutorial.item.ModItems;
 import net.shadowfacts.tutorial.proxy.CommonProxy;
 
-@Mod(modid = TutorialMod.modId, name = TutorialMod.name, version = TutorialMod.version, acceptedMinecraftVersions = "[1.9.4]")
+@Mod(modid = TutorialMod.modId, name = TutorialMod.name, version = TutorialMod.version, acceptedMinecraftVersions = "[1.10.2]")
 public class TutorialMod {
 
 	public static final String modId = "tutorial";
