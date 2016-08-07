@@ -9,6 +9,7 @@ import net.shadowfacts.tutorial.block.ModBlocks;
 import net.shadowfacts.tutorial.client.TutorialTab;
 import net.shadowfacts.tutorial.item.ModItems;
 import net.shadowfacts.tutorial.proxy.CommonProxy;
+import net.shadowfacts.tutorial.recipe.ModRecipes;
 
 @Mod(modid = TutorialMod.modId, name = TutorialMod.name, version = TutorialMod.version, acceptedMinecraftVersions = "[1.10.2]")
 public class TutorialMod {
@@ -33,7 +34,7 @@ public class TutorialMod {
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
-
+		ModRecipes.init();
 	}
 
 	@Mod.EventHandler
