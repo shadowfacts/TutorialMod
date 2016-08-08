@@ -10,8 +10,8 @@ public class ModItems {
 	public static ItemCornSeed cornSeed;
 
 	public static void init() {
-		ingotCopper = register(new ItemBase("ingotCopper"));
-		corn = register(new ItemBase("corn"));
+		ingotCopper = register(new ItemOre("ingotCopper", "ingotCopper"));
+		corn = register(new ItemOre("corn", "cropCorn"));
 		cornSeed = register(new ItemCornSeed());
 	}
 
@@ -20,6 +20,9 @@ public class ModItems {
 
 		if (item instanceof ItemModelProvider) {
 			((ItemModelProvider)item).registerItemModel(item);
+		}
+		if (item instanceof ItemOreDict) {
+			((ItemOreDict)item).initOreDict();
 		}
 
 		return item;
