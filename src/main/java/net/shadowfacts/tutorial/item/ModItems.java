@@ -6,12 +6,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModItems {
 
 	public static ItemBase ingotCopper;
-	public static ItemBase corn;
+	public static ItemCorn corn;
 	public static ItemCornSeed cornSeed;
 
 	public static void init() {
 		ingotCopper = register(new ItemOre("ingotCopper", "ingotCopper"));
-		corn = register(new ItemOre("corn", "cropCorn"));
+		corn = register(new ItemCorn());
 		cornSeed = register(new ItemCornSeed());
 	}
 
