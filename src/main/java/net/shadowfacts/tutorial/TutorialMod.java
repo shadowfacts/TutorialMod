@@ -1,5 +1,7 @@
 package net.shadowfacts.tutorial;
 
+import net.minecraft.item.Item;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -25,6 +27,7 @@ public class TutorialMod {
 	public static CommonProxy proxy;
 
 	public static final TutorialTab creativeTab = new TutorialTab();
+	public static final Item.ToolMaterial copperMaterial = EnumHelper.addToolMaterial("COPPER", 2, 500, 6, 2, 14);
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {

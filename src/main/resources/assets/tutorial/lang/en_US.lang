@@ -2,6 +2,11 @@
 item.ingotCopper.name=Copper Ingot
 item.corn.name=Corn
 item.cornSeed.name=Corn Seed
+item.copperSword.name=Copper Sword
+item.copperPickaxe.name=Copper Pickaxe
+item.copperAxe.name=Copper Axe
+item.copperShovel.name=Copper Shovel
+item.copperHoe.name=Copper Hoe
 
 # Blocks
 tile.oreCopper.name=Copper Ore
