@@ -7,6 +7,10 @@ item.copperPickaxe.name=Copper Pickaxe
 item.copperAxe.name=Copper Axe
 item.copperShovel.name=Copper Shovel
 item.copperHoe.name=Copper Hoe
+item.copperHelmet.name=Copper Helmet
+item.copperChestplate.name=Copper Chestplate
+item.copperLeggings.name=Copper Leggings
+item.copperBoots.name=Copper Boots
 
 # Blocks
 tile.oreCopper.name=Copper Ore
