@@ -9,11 +9,13 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.shadowfacts.tutorial.block.ModBlocks;
 import net.shadowfacts.tutorial.client.TutorialTab;
 import net.shadowfacts.tutorial.item.ModItems;
 import net.shadowfacts.tutorial.proxy.CommonProxy;
 import net.shadowfacts.tutorial.recipe.ModRecipes;
+import net.shadowfacts.tutorial.world.ModWorldGen;
 
 @Mod(modid = TutorialMod.modId, name = TutorialMod.name, version = TutorialMod.version, acceptedMinecraftVersions = "[1.10.2]")
 public class TutorialMod {
@@ -36,6 +38,7 @@ public class TutorialMod {
 	public void preInit(FMLPreInitializationEvent event) {
 		ModBlocks.init();
 		ModItems.init();
+		GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
 	}
 
 	@Mod.EventHandler
