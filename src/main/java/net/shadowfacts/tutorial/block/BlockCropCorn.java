@@ -8,8 +8,8 @@ import net.shadowfacts.tutorial.item.ModItems;
 public class BlockCropCorn extends BlockCrops {
 
 	public BlockCropCorn() {
-		setUnlocalizedName("cropCorn");
-		setRegistryName("cropCorn");
+		setUnlocalizedName("crop_corn");
+		setRegistryName("crop_corn");
 
 		setCreativeTab(TutorialMod.creativeTab);
 	}

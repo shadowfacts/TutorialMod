@@ -17,7 +17,7 @@ import net.shadowfacts.tutorial.proxy.CommonProxy;
 import net.shadowfacts.tutorial.recipe.ModRecipes;
 import net.shadowfacts.tutorial.world.ModWorldGen;
 
-@Mod(modid = TutorialMod.modId, name = TutorialMod.name, version = TutorialMod.version, acceptedMinecraftVersions = "[1.10.2]")
+@Mod(modid = TutorialMod.modId, name = TutorialMod.name, version = TutorialMod.version)
 public class TutorialMod {
 
 	public static final String modId = "tutorial";

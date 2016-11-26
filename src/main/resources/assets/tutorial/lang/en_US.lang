@@ -1,19 +1,19 @@
 # Items
-item.ingotCopper.name=Copper Ingot
+item.ingot_copper.name=Copper Ingot
 item.corn.name=Corn
-item.cornSeed.name=Corn Seed
-item.copperSword.name=Copper Sword
-item.copperPickaxe.name=Copper Pickaxe
-item.copperAxe.name=Copper Axe
-item.copperShovel.name=Copper Shovel
-item.copperHoe.name=Copper Hoe
-item.copperHelmet.name=Copper Helmet
-item.copperChestplate.name=Copper Chestplate
-item.copperLeggings.name=Copper Leggings
-item.copperBoots.name=Copper Boots
+item.corn_seed.name=Corn Seed
+item.copper_sword.name=Copper Sword
+item.copper_pickaxe.name=Copper Pickaxe
+item.copper_axe.name=Copper Axe
+item.copper_shovel.name=Copper Shovel
+item.copper_hoe.name=Copper Hoe
+item.copper_helmet.name=Copper Helmet
+item.copper_chestplate.name=Copper Chestplate
+item.copper_leggings.name=Copper Leggings
+item.copper_boots.name=Copper Boots
 
 # Blocks
-tile.oreCopper.name=Copper Ore
+tile.ore_copper.name=Copper Ore
 tile.pedestal.name=Pedestal
 
 # Misc

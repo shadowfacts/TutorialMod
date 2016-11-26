@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "tutorial:items/copperChestplate"
+		"layer0": "tutorial:items/corn_seed"
 	}
 }

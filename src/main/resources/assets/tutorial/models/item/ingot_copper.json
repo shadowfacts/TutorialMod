@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "tutorial:items/copperBoots"
+		"layer0": "tutorial:items/ingot_copper"
 	}
 }

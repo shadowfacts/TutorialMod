@@ -1,6 +1,6 @@
 {
 	"parent": "item/handheld",
 	"textures": {
-		"layer0": "tutorial:items/copperHoe"
+		"layer0": "tutorial:items/copper_shovel"
 	}
 }
