@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.shadowfacts.tutorial.block.ModBlocks;
 import net.shadowfacts.tutorial.client.TutorialTab;
@@ -39,6 +40,7 @@ public class TutorialMod {
 		ModBlocks.init();
 		ModItems.init();
 		GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
+		NetworkRegistry.INSTANCE.registerGuiHandler(this, new ModGuiHandler());
 	}
 
 	@Mod.EventHandler
