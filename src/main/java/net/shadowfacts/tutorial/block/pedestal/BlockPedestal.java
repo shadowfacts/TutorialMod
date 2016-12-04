@@ -14,6 +14,7 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
+import net.shadowfacts.tutorial.ModGuiHandler;
 import net.shadowfacts.tutorial.TutorialMod;
 import net.shadowfacts.tutorial.block.BlockBase;
 import net.shadowfacts.tutorial.block.BlockTileEntity;
@@ -50,13 +51,7 @@ public class BlockPedestal extends BlockTileEntity<TileEntityPedestal> {
 					player.setHeldItem(hand, itemHandler.insertItem(0, heldItem, false));
 				}
 			} else {
-				ItemStack stack = itemHandler.getStackInSlot(0);
-				if (stack != null) {
-					String localized = TutorialMod.proxy.localize(stack.getUnlocalizedName() + ".name");
-					player.addChatMessage(new TextComponentString(stack.stackSize + "x " + localized));
-				} else {
-					player.addChatMessage(new TextComponentString("Empty"));
-				}
+				player.openGui(TutorialMod.instance, ModGuiHandler.PEDESTAL, world, pos.getX(), pos.getY(), pos.getZ());
 			}
 		}
 		return true;
