@@ -25,10 +25,12 @@ public class TileEntityCounter extends TileEntity {
 
 	public void incrementCount() {
 		count++;
+		markDirty();
 	}
 
 	public void decrementCount() {
 		count--;
+		markDirty();
 	}
 
 }
