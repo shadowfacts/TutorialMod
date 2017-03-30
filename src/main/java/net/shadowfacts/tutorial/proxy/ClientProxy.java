@@ -1,10 +1,15 @@
 package net.shadowfacts.tutorial.proxy;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.item.Item;
+import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.shadowfacts.tutorial.TutorialMod;
+import net.shadowfacts.tutorial.block.pedestal.TESRPedestal;
+import net.shadowfacts.tutorial.block.pedestal.TileEntityPedestal;
 
 public class ClientProxy extends CommonProxy {
 
@@ -18,4 +23,8 @@ public class ClientProxy extends CommonProxy {
 		return I18n.format(unlocalized, args);
 	}
 
+	@Override
+	public void registerRenderers() {
+		ClientRegistry.bindTileEntitySpecialRenderer(TileEntityPedestal.class, new TESRPedestal());
+	}
 }
