@@ -1,0 +1,11 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "tutorial:corn"
+		}
+	],
+	"result": {
+		"item": "tutorial:corn_seed"
+	}
+}

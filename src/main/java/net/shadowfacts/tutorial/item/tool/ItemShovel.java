@@ -1,11 +1,9 @@
 package net.shadowfacts.tutorial.item.tool;
 
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemSpade;
 import net.shadowfacts.tutorial.TutorialMod;
-import net.shadowfacts.tutorial.item.ItemModelProvider;
 
-public class ItemShovel extends ItemSpade implements ItemModelProvider {
+public class ItemShovel extends ItemSpade {
 
 	private String name;
 
@@ -16,8 +14,7 @@ public class ItemShovel extends ItemSpade implements ItemModelProvider {
 		this.name = name;
 	}
 
-	@Override
-	public void registerItemModel(Item item) {
+	public void registerItemModel() {
 		TutorialMod.proxy.registerItemRenderer(this, 0, name);
 	}
 

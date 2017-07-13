@@ -4,10 +4,10 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 import net.shadowfacts.tutorial.TutorialMod;
-import net.shadowfacts.tutorial.item.ItemModelProvider;
 
-public class BlockBase extends Block implements ItemModelProvider {
+public class BlockBase extends Block {
 
 	protected String name;
 
@@ -22,7 +22,6 @@ public class BlockBase extends Block implements ItemModelProvider {
 		setCreativeTab(TutorialMod.creativeTab);
 	}
 
-	@Override
 	public void registerItemModel(Item item) {
 		TutorialMod.proxy.registerItemRenderer(item, 0, name);
 	}
@@ -31,6 +30,10 @@ public class BlockBase extends Block implements ItemModelProvider {
 	public BlockBase setCreativeTab(CreativeTabs tab) {
 		super.setCreativeTab(tab);
 		return this;
+	}
+
+	public Item createItemBlock() {
+		return new ItemBlock(this).setRegistryName(getRegistryName());
 	}
 
 }

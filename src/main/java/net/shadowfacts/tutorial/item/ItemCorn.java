@@ -1,11 +1,10 @@
 package net.shadowfacts.tutorial.item;
 
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraftforge.oredict.OreDictionary;
 import net.shadowfacts.tutorial.TutorialMod;
 
-public class ItemCorn extends ItemFood implements ItemModelProvider, ItemOreDict {
+public class ItemCorn extends ItemFood {
 
 	public ItemCorn() {
 		super(3, 0.6f, false);
@@ -14,12 +13,10 @@ public class ItemCorn extends ItemFood implements ItemModelProvider, ItemOreDict
 		setCreativeTab(TutorialMod.creativeTab);
 	}
 
-	@Override
-	public void registerItemModel(Item item) {
+	public void registerItemModel() {
 		TutorialMod.proxy.registerItemRenderer(this, 0, "corn");
 	}
 
-	@Override
 	public void initOreDict() {
 		OreDictionary.registerOre("cropCorn", this);
 	}

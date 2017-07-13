@@ -1,10 +1,8 @@
 package net.shadowfacts.tutorial.item.tool;
 
-import net.minecraft.item.Item;
 import net.shadowfacts.tutorial.TutorialMod;
-import net.shadowfacts.tutorial.item.ItemModelProvider;
 
-public class ItemAxe extends net.minecraft.item.ItemAxe implements ItemModelProvider {
+public class ItemAxe extends net.minecraft.item.ItemAxe {
 
 	private String name;
 
@@ -15,8 +13,7 @@ public class ItemAxe extends net.minecraft.item.ItemAxe implements ItemModelProv
 		this.name = name;
 	}
 
-	@Override
-	public void registerItemModel(Item item) {
+	public void registerItemModel() {
 		TutorialMod.proxy.registerItemRenderer(this, 0, name);
 	}
 

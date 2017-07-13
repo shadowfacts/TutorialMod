@@ -1,7 +1,6 @@
 package net.shadowfacts.tutorial.client;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.shadowfacts.tutorial.TutorialMod;
 import net.shadowfacts.tutorial.item.ModItems;

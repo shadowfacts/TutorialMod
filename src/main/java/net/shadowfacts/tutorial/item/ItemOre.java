@@ -2,7 +2,7 @@ package net.shadowfacts.tutorial.item;
 
 import net.minecraftforge.oredict.OreDictionary;
 
-public class ItemOre extends ItemBase implements ItemOreDict {
+public class ItemOre extends ItemBase {
 
 	private String oreName;
 
@@ -12,7 +12,6 @@ public class ItemOre extends ItemBase implements ItemOreDict {
 		this.oreName = oreName;
 	}
 
-	@Override
 	public void initOreDict() {
 		OreDictionary.registerOre(oreName, this);
 	}

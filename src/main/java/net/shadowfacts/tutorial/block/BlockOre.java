@@ -3,9 +3,8 @@ package net.shadowfacts.tutorial.block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.oredict.OreDictionary;
-import net.shadowfacts.tutorial.item.ItemOreDict;
 
-public class BlockOre extends BlockBase implements ItemOreDict {
+public class BlockOre extends BlockBase {
 
 	private String oreName;
 
@@ -18,7 +17,6 @@ public class BlockOre extends BlockBase implements ItemOreDict {
 		setResistance(5f);
 	}
 
-	@Override
 	public void initOreDict() {
 		OreDictionary.registerOre(oreName, this);
 	}

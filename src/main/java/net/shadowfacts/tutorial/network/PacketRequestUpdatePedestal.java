@@ -45,7 +45,7 @@ public class PacketRequestUpdatePedestal implements IMessage {
 
 		@Override
 		public PacketUpdatePedestal onMessage(PacketRequestUpdatePedestal message, MessageContext ctx) {
-			World world = FMLCommonHandler.instance().getMinecraftServerInstance().worldServerForDimension(message.dimension);
+			World world = FMLCommonHandler.instance().getMinecraftServerInstance().getWorld(message.dimension);
 			TileEntityPedestal te = (TileEntityPedestal)world.getTileEntity(message.pos);
 			if (te != null) {
 				return new PacketUpdatePedestal(te);

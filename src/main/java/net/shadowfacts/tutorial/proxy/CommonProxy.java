@@ -2,7 +2,6 @@ package net.shadowfacts.tutorial.proxy;
 
 import net.minecraft.item.Item;
 import net.minecraft.util.text.translation.I18n;
-import net.minecraft.world.World;
 
 public class CommonProxy {
 

@@ -1,10 +1,9 @@
 package net.shadowfacts.tutorial.item;
 
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.item.Item;
 import net.shadowfacts.tutorial.TutorialMod;
 
-public class ItemArmor extends net.minecraft.item.ItemArmor implements ItemModelProvider {
+public class ItemArmor extends net.minecraft.item.ItemArmor {
 
 	private String name;
 
@@ -15,8 +14,7 @@ public class ItemArmor extends net.minecraft.item.ItemArmor implements ItemModel
 		this.name = name;
 	}
 
-	@Override
-	public void registerItemModel(Item item) {
+	public void registerItemModel() {
 		TutorialMod.proxy.registerItemRenderer(this, 0, name);
 	}
 
